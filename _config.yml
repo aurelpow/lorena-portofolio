@@ -10,3 +10,11 @@ collections:
   projects:
     output: true
     permalink: /projects/:name/
+exclude:
+  - CLAUDE.md
+  - lorena_patri_portfolio.html
+  - prompts/
+  - docs/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
