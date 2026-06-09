@@ -1,0 +1,106 @@
+# Decap CMS — Lorena Patri Portfolio
+# OAuth proxy via Netlify (free, no Netlify hosting required)
+# Setup instructions: see README.md → CMS (Decap) section
+backend:
+  name: github
+  repo: aurelpow/lorena-portfolio
+  branch: master
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+site_url: https://aurelpow.github.io/lorena-portfolio
+media_folder: "assets/img/projects"
+public_folder: "/lorena-portfolio/assets/img/projects"
+locale: es
+
+collections:
+  - name: "projects"
+    label: "Proyectos"
+    label_singular: "Proyecto"
+    folder: "_projects"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "project"
+
+      - label: "Título"
+        name: "title"
+        widget: "string"
+        required: true
+        hint: "Ej: Análisis retributivo integral — Ciclos LT"
+
+      - label: "Año"
+        name: "year"
+        widget: "string"
+        hint: "Ej: 2025"
+
+      - label: "Herramienta / Stack"
+        name: "tool"
+        widget: "string"
+        hint: "Ej: Excel · Informe técnico  |  Power BI  |  Excel · Diseño — el logo se genera automáticamente si incluyes 'Excel' o 'Power BI'"
+
+      - label: "Destacado"
+        name: "featured"
+        widget: "boolean"
+        default: false
+        required: false
+        hint: "Activa el borde terracota y el badge en la tarjeta"
+
+      - label: "Etiqueta de destacado"
+        name: "featured_label"
+        widget: "string"
+        required: false
+        hint: "Solo visible si Destacado está activado. Ej: Caso práctico CEF"
+
+      - label: "Descripción"
+        name: "description"
+        widget: "text"
+        required: true
+        hint: "Resumen breve que aparece en la tarjeta y en la página de detalle"
+
+      - label: "Highlights"
+        name: "highlights"
+        widget: "list"
+        required: false
+        hint: "Puntos clave que aparecen con → en la tarjeta (opcional)"
+        field:
+          label: "Punto"
+          name: "item"
+          widget: "string"
+
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+        hint: "Todos los tags del proyecto"
+        field:
+          label: "Tag"
+          name: "item"
+          widget: "string"
+
+      - label: "Tags destacados (color terracota)"
+        name: "accent_tags"
+        widget: "list"
+        required: false
+        hint: "Subconjunto de Tags que se muestran en terracota. Deben coincidir exactamente con los Tags definidos arriba"
+        field:
+          label: "Tag"
+          name: "item"
+          widget: "string"
+
+      - label: "URL del proyecto"
+        name: "link"
+        widget: "string"
+        required: false
+        hint: "Enlace a LinkedIn, Power BI, Google Drive, etc."
+
+      - label: "Texto del enlace"
+        name: "link_label"
+        widget: "string"
+        required: false
+        default: "Ver proyecto"
+        hint: "Ej: Ver informe completo · Ver dashboard · Ver propuesta"

@@ -110,3 +110,39 @@ Push (or merge) to `master` → GitHub Pages auto-deploys within ~60 seconds.
 
 Repo must be **public** and GitHub Pages configured to deploy from `master / (root)` in:  
 *Settings → Pages → Branch → `master` / `/ (root)`*
+
+---
+
+## CMS (Decap) — editing without code
+
+Lorena can add, edit, and delete projects at:
+
+**`https://aurelpow.github.io/lorena-portfolio/admin/`**
+
+She logs in with her GitHub account. No code required.
+
+### One-time setup (Aurélien)
+
+**1. Add Lorena as repo collaborator**  
+*GitHub → repo Settings → Collaborators → Add people → Lorena's GitHub username*  
+She needs **Write** access so the CMS can commit to `master`.
+
+**2. Register a GitHub OAuth App**  
+Go to https://github.com/settings/developers → *OAuth Apps → New OAuth App*
+
+| Field | Value |
+|-------|-------|
+| Application name | Lorena Portfolio CMS |
+| Homepage URL | `https://aurelpow.github.io/lorena-portfolio` |
+| Authorization callback URL | `https://api.netlify.com/auth/v2/token` |
+
+Save the **Client ID** — you will not need to paste it anywhere; Netlify's auth proxy handles it.
+
+**3. Register the site with Netlify's OAuth proxy**  
+Create a free Netlify account (no hosting needed) at https://app.netlify.com  
+→ *Team settings → OAuth applications → Register your site URL*:  
+`https://aurelpow.github.io/lorena-portfolio`
+
+This allows `api.netlify.com` to proxy GitHub OAuth for static sites — it is free and does not require hosting on Netlify.
+
+Once these three steps are done, Lorena opens `/admin/`, clicks **Login with GitHub**, authorises once, and lands in the CMS dashboard where she can manage projects with a form UI.
