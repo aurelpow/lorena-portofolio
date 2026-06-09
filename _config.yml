@@ -1,0 +1,10 @@
+title: "Lorena Patri"
+description: "C&B Analyst · Compensación & Benefits · Madrid"
+baseurl: "/portofolio-website"
+url: "https://lorena-patri.github.io"
+markdown: kramdown
+highlighter: rouge
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/

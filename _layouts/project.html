@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<article class="project-detail">
+  <header class="project-detail__header">
+    <span class="project-detail__year">{{ page.year }}</span>
+    <h1 class="project-detail__title">{{ page.title }}</h1>
+    <span class="project-detail__tool">{{ page.tool }}</span>
+  </header>
+
+  <p class="project-detail__description">{{ page.description }}</p>
+
+  {% if page.highlights %}
+    <ul class="project-detail__highlights">
+      {% for item in page.highlights %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  <div class="project-detail__body">
+    {{ content }}
+  </div>
+
+  {% if page.tags %}
+    <div class="project-detail__tags">
+      {% for tag in page.tags %}
+        {% if page.accent_tags contains tag %}
+          <span class="tag tag--accent">{{ tag }}</span>
+        {% else %}
+          <span class="tag">{{ tag }}</span>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if page.link %}
+    <a class="project-detail__link" href="{{ page.link }}" target="_blank" rel="noopener">
+      {{ page.link_label | default: "Ver proyecto" }}
+    </a>
+  {% endif %}
+</article>
