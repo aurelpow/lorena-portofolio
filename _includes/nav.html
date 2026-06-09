@@ -1,7 +1,11 @@
-<nav>
+<nav class="nav">
   <div class="nav-left">
-    <a href="{{ '/' | relative_url }}" style="display:flex;align-items:center;gap:12px;text-decoration:none;">
-      <div class="nav-avatar" aria-hidden="true">LP</div>
+    <a class="nav-brand" href="{{ '/' | relative_url }}">
+      {% if site.profile_photo %}
+        <img class="nav-photo" src="{{ site.baseurl }}/assets/img/profile/lorena.jpg" alt="Lorena Patri">
+      {% else %}
+        <div class="nav-avatar" aria-hidden="true">LP</div>
+      {% endif %}
       <span class="nav-name">Lorena Patri</span>
     </a>
   </div>

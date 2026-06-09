@@ -1,9 +1,11 @@
 title: "Lorena Patri"
 description: "C&B Analyst · Compensación & Benefits · Madrid"
-baseurl: "/portofolio-website"
-url: "https://lorena-patri.github.io"
+baseurl: "/lorena-portfolio"
+url: "https://aurelpow.github.io"
 markdown: kramdown
 highlighter: rouge
+# Set profile_photo: true once assets/img/profile/lorena.jpg is added
+profile_photo: false
 collections:
   projects:
     output: true
