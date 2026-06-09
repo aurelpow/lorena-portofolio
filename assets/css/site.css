@@ -89,6 +89,17 @@ body { font-family: var(--font-body); background: var(--bg); color: var(--dark);
   max-width: 540px; line-height: 1.9;
 }
 .hero-desc strong { color: var(--dark); font-weight: 500; }
+.hero-cta {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-top: 36px;
+  font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase;
+  font-weight: 600; color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+.hero-cta::after { content: '→'; }
+.hero-cta:hover { border-bottom-color: var(--accent); }
 
 /* === SECTION DIVIDER === */
 .section-divider {
