@@ -3,47 +3,55 @@ layout: default
 ---
 {{ content }}
 
-<section class="projects-grid">
+<section class="projects">
+  <p class="projects-label">Proyectos</p>
+
   {% assign sorted_projects = site.projects | sort: "year" | reverse %}
   {% for project in sorted_projects %}
-    <article class="project-card{% if project.featured %} project-card--featured{% endif %}">
-      {% if project.featured %}
-        <span class="project-card__badge">{{ project.featured_label }}</span>
-      {% endif %}
+    <article class="project{% if project.featured %} featured{% endif %}">
+      <div class="proj-bar"></div>
+      <div class="proj-inner">
 
-      <header class="project-card__header">
-        <span class="project-card__year">{{ project.year }}</span>
-        <h2 class="project-card__title">{{ project.title }}</h2>
-        <span class="project-card__tool">{{ project.tool }}</span>
-      </header>
-
-      <p class="project-card__description">{{ project.description }}</p>
-
-      {% if project.highlights %}
-        <ul class="project-card__highlights">
-          {% for item in project.highlights %}
-            <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-
-      {% if project.tags %}
-        <div class="project-card__tags">
-          {% for tag in project.tags %}
-            {% if project.accent_tags contains tag %}
-              <span class="tag tag--accent">{{ tag }}</span>
-            {% else %}
-              <span class="tag">{{ tag }}</span>
-            {% endif %}
-          {% endfor %}
+        <div class="proj-left">
+          <span class="proj-year">{{ project.year }}</span>
+          <span class="proj-tool">{{ project.tool }}</span>
+          {% if project.featured %}
+            <span class="proj-featured-badge">{{ project.featured_label }}</span>
+          {% endif %}
         </div>
-      {% endif %}
 
-      {% if project.link %}
-        <a class="project-card__link" href="{{ project.link }}" target="_blank" rel="noopener">
-          {{ project.link_label | default: "Ver proyecto" }}
-        </a>
-      {% endif %}
+        <div class="proj-right">
+          <h2 class="proj-title">{{ project.title }}</h2>
+          <p class="proj-desc">{{ project.description }}</p>
+
+          {% if project.highlights %}
+            <ul class="proj-highlights">
+              {% for item in project.highlights %}
+                <li class="proj-hl">{{ item }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+
+          {% if project.tags %}
+            <div class="proj-tags">
+              {% for tag in project.tags %}
+                {% if project.accent_tags contains tag %}
+                  <span class="tag accent">{{ tag }}</span>
+                {% else %}
+                  <span class="tag">{{ tag }}</span>
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          {% if project.link %}
+            <a class="proj-link" href="{{ project.link }}" target="_blank" rel="noopener">
+              {{ project.link_label | default: "Ver proyecto" }}
+            </a>
+          {% endif %}
+        </div>
+
+      </div>
     </article>
   {% endfor %}
 </section>

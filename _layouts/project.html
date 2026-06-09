@@ -2,31 +2,27 @@
 layout: default
 ---
 <article class="project-detail">
-  <header class="project-detail__header">
-    <span class="project-detail__year">{{ page.year }}</span>
-    <h1 class="project-detail__title">{{ page.title }}</h1>
-    <span class="project-detail__tool">{{ page.tool }}</span>
+  <header>
+    <span class="proj-year">{{ page.year }}</span>
+    <h1 class="proj-title">{{ page.title }}</h1>
+    <span class="proj-tool">{{ page.tool }}</span>
   </header>
 
-  <p class="project-detail__description">{{ page.description }}</p>
+  <p class="proj-desc">{{ page.description }}</p>
 
   {% if page.highlights %}
-    <ul class="project-detail__highlights">
+    <ul class="proj-highlights">
       {% for item in page.highlights %}
-        <li>{{ item }}</li>
+        <li class="proj-hl">{{ item }}</li>
       {% endfor %}
     </ul>
   {% endif %}
 
-  <div class="project-detail__body">
-    {{ content }}
-  </div>
-
   {% if page.tags %}
-    <div class="project-detail__tags">
+    <div class="proj-tags">
       {% for tag in page.tags %}
         {% if page.accent_tags contains tag %}
-          <span class="tag tag--accent">{{ tag }}</span>
+          <span class="tag accent">{{ tag }}</span>
         {% else %}
           <span class="tag">{{ tag }}</span>
         {% endif %}
@@ -35,8 +31,14 @@ layout: default
   {% endif %}
 
   {% if page.link %}
-    <a class="project-detail__link" href="{{ page.link }}" target="_blank" rel="noopener">
+    <a class="proj-link" href="{{ page.link }}" target="_blank" rel="noopener">
       {{ page.link_label | default: "Ver proyecto" }}
     </a>
+  {% endif %}
+
+  {% if content != "" %}
+    <div class="project-detail-body">
+      {{ content }}
+    </div>
   {% endif %}
 </article>
