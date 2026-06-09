@@ -5,7 +5,14 @@ layout: default
   <header>
     <span class="proj-year">{{ page.year }}</span>
     <h1 class="proj-title">{{ page.title }}</h1>
-    <span class="proj-tool">{{ page.tool }}</span>
+    <div class="proj-tool-row">
+      {% if page.tool contains 'Excel' %}
+        <img class="tool-icon" src="{{ '/assets/img/tools/excel.svg' | relative_url }}" alt="Excel" width="22" height="22">
+      {% elsif page.tool contains 'Power BI' %}
+        <img class="tool-icon" src="{{ '/assets/img/tools/powerbi.svg' | relative_url }}" alt="Power BI" width="22" height="22">
+      {% endif %}
+      <span class="proj-tool">{{ page.tool }}</span>
+    </div>
   </header>
 
   <p class="proj-desc">{{ page.description }}</p>

@@ -20,6 +20,11 @@ layout: default
 
         <div class="proj-left">
           <span class="proj-year">{{ project.year }}</span>
+          {% if project.tool contains 'Excel' %}
+            <img class="tool-icon" src="{{ '/assets/img/tools/excel.svg' | relative_url }}" alt="Excel" width="22" height="22">
+          {% elsif project.tool contains 'Power BI' %}
+            <img class="tool-icon" src="{{ '/assets/img/tools/powerbi.svg' | relative_url }}" alt="Power BI" width="22" height="22">
+          {% endif %}
           <span class="proj-tool">{{ project.tool }}</span>
           {% if project.featured %}
             <span class="proj-featured-badge">{{ project.featured_label }}</span>

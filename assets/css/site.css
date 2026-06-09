@@ -172,6 +172,12 @@ body::before {
   font-size: 13px; color: var(--warm); font-weight: 400;
   display: block; margin-bottom: auto;
 }
+.tool-icon {
+  width: 22px; height: 22px;
+  display: block; margin-bottom: 10px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
 .proj-featured-badge {
   display: inline-block; margin-top: 20px;
   font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
@@ -251,6 +257,10 @@ body::before {
   margin-bottom: 16px;
 }
 .project-detail .proj-tool { margin-bottom: 0; }
+.proj-tool-row {
+  display: flex; align-items: center; gap: 8px;
+}
+.proj-tool-row .tool-icon { margin-bottom: 0; }
 .project-detail .proj-desc {
   font-size: 15px; line-height: 1.9;
   max-width: 660px; margin-bottom: 32px;
