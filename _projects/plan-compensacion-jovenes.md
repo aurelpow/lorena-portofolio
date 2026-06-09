@@ -12,6 +12,6 @@ tags:
   - "Retribución flexible"
 accent_tags:
   - "Total rewards"
-link: "https://www.linkedin.com/in/lorena-patri/"
+link: "https://drive.google.com/file/d/1HgD7v-ELSsFXyuyT5gGFcyXpiV93O7_d/view"
 link_label: "Ver propuesta"
 ---

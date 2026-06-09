@@ -11,6 +11,6 @@ tags:
   - "Visualización"
 accent_tags:
   - "Power BI"
-link: "https://www.linkedin.com/in/lorena-patri/"
+link: "https://app.powerbi.com/view?r=eyJrIjoiMDk2YmVmZGMtZTQ3My00ZTM0LWJkOTctZmVkM2ViNjEzMzhmIiwidCI6IjY1YzNlOWNhLWM1YWMtNDM2YS04MzBhLTZmNDU4NzM0OGQ0NCIsImMiOjl9&embedImagePlaceholder=true"
 link_label: "Ver dashboard"
 ---
