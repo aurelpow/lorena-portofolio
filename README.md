@@ -134,7 +134,7 @@ Go to https://github.com/settings/developers → *OAuth Apps → New OAuth App*
 |-------|-------|
 | Application name | Lorena Portfolio CMS |
 | Homepage URL | `https://aurelpow.github.io/lorena-portofolio` |
-| Authorization callback URL | `https://api.netlify.com/auth/v2/token` |
+| Authorization callback URL | `https://api.netlify.com/auth/done` |
 
 Save the **Client ID** — you will not need to paste it anywhere; Netlify's auth proxy handles it.
 
