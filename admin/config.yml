@@ -15,6 +15,55 @@ public_folder: "/lorena-portofolio/assets/img/projects"
 locale: es
 
 collections:
+  - name: "pages"
+    label: "Páginas"
+    files:
+      - label: "Sobre mí"
+        name: "about"
+        file: "about.md"
+        fields:
+          - label: "Layout"
+            name: "layout"
+            widget: "hidden"
+            default: "about"
+
+          - label: "Título"
+            name: "title"
+            widget: "string"
+            required: true
+
+          - label: "Biografía"
+            name: "intro"
+            widget: "text"
+            required: true
+            hint: "Texto de presentación que aparece en la parte superior de la página"
+
+          - label: "Áreas de especialización"
+            name: "skills"
+            widget: "list"
+            required: false
+            hint: "Competencias mostradas como etiquetas"
+            field:
+              label: "Competencia"
+              name: "item"
+              widget: "string"
+
+          - label: "LinkedIn"
+            name: "linkedin"
+            widget: "string"
+            required: false
+
+          - label: "Email"
+            name: "email"
+            widget: "string"
+            required: false
+
+          - label: "Contenido adicional"
+            name: "body"
+            widget: "markdown"
+            required: false
+            hint: "Texto opcional que aparece entre las áreas de especialización y el contacto"
+
   - name: "projects"
     label: "Proyectos"
     label_singular: "Proyecto"

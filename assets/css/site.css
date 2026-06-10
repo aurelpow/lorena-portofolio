@@ -287,6 +287,44 @@ body::before {
 .project-detail-body ol { padding-left: 20px; margin-bottom: 16px; }
 .project-detail-body li { margin-bottom: 6px; }
 
+/* === ABOUT PAGE === */
+.about-page {
+  padding: 140px 48px 48px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.about-title {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 5vw, 56px);
+  font-weight: 300; line-height: 1.1;
+  color: var(--dark); margin-bottom: 24px;
+}
+.about-intro {
+  font-size: 15px; color: var(--warm);
+  max-width: 640px; line-height: 1.9;
+}
+.about-section {
+  padding: 48px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.skills-grid {
+  display: flex; flex-wrap: wrap; gap: 10px;
+}
+.skill-tag {
+  font-size: 12px; letter-spacing: 1px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 2px;
+  border: 1px solid var(--linen);
+  color: var(--warm); background: var(--white);
+  transition: border-color 0.2s, color 0.2s;
+}
+.skill-tag:hover { border-color: var(--accent); color: var(--accent); }
+.about-body {
+  font-size: 15px; color: var(--warm);
+  line-height: 1.9; max-width: 660px;
+}
+.contact-links { display: flex; gap: 32px; flex-wrap: wrap; }
+
 /* === FOOTER === */
 footer {
   border-top: 1px solid var(--linen);
@@ -311,5 +349,8 @@ footer a:hover { color: var(--accent); }
   }
   .proj-right { padding: 20px; }
   .project-detail { padding: 100px 20px 60px; }
+  .about-page { padding: 100px 20px 32px; }
+  .about-section { padding: 32px 20px; }
+  .contact-links { flex-direction: column; gap: 12px; }
   footer { padding: 24px 20px; flex-direction: column; gap: 8px; text-align: center; }
 }
