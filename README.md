@@ -2,7 +2,7 @@
 
 Portfolio personal de Lorena Patri, Compensation & Benefits Analyst based in Madrid.
 
-**Live site:** https://aurelpow.github.io/lorena-portfolio *(activo tras merge a `master`)*
+**Live site:** https://aurelpow.github.io/lorena-portofolio *(activo tras merge a `master`)*
 
 ---
 
@@ -117,7 +117,7 @@ Repo must be **public** and GitHub Pages configured to deploy from `master / (ro
 
 Lorena can add, edit, and delete projects at:
 
-**`https://aurelpow.github.io/lorena-portfolio/admin/`**
+**`https://aurelpow.github.io/lorena-portofolio/admin/`**
 
 She logs in with her GitHub account. No code required.
 
@@ -133,7 +133,7 @@ Go to https://github.com/settings/developers → *OAuth Apps → New OAuth App*
 | Field | Value |
 |-------|-------|
 | Application name | Lorena Portfolio CMS |
-| Homepage URL | `https://aurelpow.github.io/lorena-portfolio` |
+| Homepage URL | `https://aurelpow.github.io/lorena-portofolio` |
 | Authorization callback URL | `https://api.netlify.com/auth/v2/token` |
 
 Save the **Client ID** — you will not need to paste it anywhere; Netlify's auth proxy handles it.
@@ -141,7 +141,7 @@ Save the **Client ID** — you will not need to paste it anywhere; Netlify's aut
 **3. Register the site with Netlify's OAuth proxy**  
 Create a free Netlify account (no hosting needed) at https://app.netlify.com  
 → *Team settings → OAuth applications → Register your site URL*:  
-`https://aurelpow.github.io/lorena-portfolio`
+`https://aurelpow.github.io/lorena-portofolio`
 
 This allows `api.netlify.com` to proxy GitHub OAuth for static sites — it is free and does not require hosting on Netlify.
 

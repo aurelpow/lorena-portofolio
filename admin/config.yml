@@ -3,15 +3,15 @@
 # Setup instructions: see README.md → CMS (Decap) section
 backend:
   name: github
-  repo: aurelpow/lorena-portfolio
+  repo: aurelpow/lorena-portofolio
   branch: master
   base_url: https://api.netlify.com
   auth_endpoint: auth
   site_domain: lorena-portfolio-cms.netlify.app
 
-site_url: https://aurelpow.github.io/lorena-portfolio
+site_url: https://aurelpow.github.io/lorena-portofolio
 media_folder: "assets/img/projects"
-public_folder: "/lorena-portfolio/assets/img/projects"
+public_folder: "/lorena-portofolio/assets/img/projects"
 locale: es
 
 collections:
