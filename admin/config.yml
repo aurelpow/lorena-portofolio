@@ -7,6 +7,7 @@ backend:
   branch: master
   base_url: https://api.netlify.com
   auth_endpoint: auth
+  site_domain: lorena-portfolio-cms.netlify.app
 
 site_url: https://aurelpow.github.io/lorena-portfolio
 media_folder: "assets/img/projects"
