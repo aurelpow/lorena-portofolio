@@ -12,7 +12,6 @@ backend:
 site_url: https://aurelpow.github.io/lorena-portofolio
 media_folder: "assets/img/projects"
 public_folder: "/lorena-portofolio/assets/img/projects"
-locale: es
 
 collections:
   - name: "pages"
