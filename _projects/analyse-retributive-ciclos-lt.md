@@ -25,6 +25,6 @@ accent_tags:
   - Bandas salariales
   - Compa-ratio
   - Brecha de género
-link: https://app.powerbi.com/view?r=eyJrIjoiMDk2YmVmZGMtZTQ3My00ZTM0LWJkOTctZmVkM2ViNjEzMzhmIiwidCI6IjY1YzNlOWNhLWM1YWMtNDM2YS04MzBhLTZmNDU4NzM0OGQ0NCIsImMiOjl9&embedImagePlaceholder=true
+link: https://bit.ly/4fGP4Vx
 link_label: Ver informe completo
 ---
