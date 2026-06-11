@@ -1,6 +1,6 @@
 ---
 layout: about
-title: Sobre mí
+title: Bienvenido/a
 intro: |-
   Hola, soy Lorena 👋🏻
 
