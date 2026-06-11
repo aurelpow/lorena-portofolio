@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<section class="hero">
+  <p class="hero-tag">{{ page.hero_tag }}</p>
+  <h1 class="hero-title">{{ page.hero_title }}</h1>
+  <p class="hero-desc">{{ page.hero_description }}</p>
+  {% if page.cta_label and page.cta_url %}
+    <a class="hero-cta" href="{{ page.cta_url | relative_url }}">{{ page.cta_label }}</a>
+  {% endif %}
+</section>
