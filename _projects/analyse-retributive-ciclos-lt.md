@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Análisis retributivo integral — Ciclos LT
+title: Análisis retributivo integral
 year: '2025'
 tool: Excel · Informe técnico
 featured: true
