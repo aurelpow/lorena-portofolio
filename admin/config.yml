@@ -17,6 +17,52 @@ collections:
   - name: "pages"
     label: "Páginas"
     files:
+      - label: "Inicio"
+        name: "home"
+        file: "index.md"
+        fields:
+          - label: "Layout"
+            name: "layout"
+            widget: "hidden"
+            default: "home"
+
+          - label: "Título"
+            name: "title"
+            widget: "string"
+            required: false
+            default: "Home"
+
+          - label: "Etiqueta superior"
+            name: "hero_tag"
+            widget: "string"
+            required: true
+            hint: "Texto pequeño encima del titular. Ej: Proyectos independientes · Compensación &amp; Benefits"
+
+          - label: "Titular"
+            name: "hero_title"
+            widget: "string"
+            required: true
+            hint: "Admite HTML simple. Usa <br> para el salto de línea y <em>palabra</em> para resaltar en color terracota. Ej: Análisis de<br><em>compensación</em>"
+
+          - label: "Descripción"
+            name: "hero_description"
+            widget: "text"
+            required: true
+            hint: "Admite HTML simple. Usa <strong>palabra</strong> para resaltar en negrita."
+
+          - label: "Texto del botón"
+            name: "cta_label"
+            widget: "string"
+            required: false
+            default: "Ver proyectos"
+
+          - label: "Enlace del botón"
+            name: "cta_url"
+            widget: "string"
+            required: false
+            default: "/projects"
+            hint: "Ruta relativa, ej: /projects"
+
       - label: "Sobre mí"
         name: "about"
         file: "about.md"
