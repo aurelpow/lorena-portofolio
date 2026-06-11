@@ -26,14 +26,14 @@ layout: default
             <img class="tool-icon" src="{{ '/assets/img/tools/powerbi.svg' | relative_url }}" alt="Power BI" width="22" height="22">
           {% endif %}
           <span class="proj-tool">{{ project.tool }}</span>
-          {% if project.featured %}
+          {% if project.featured_label and project.featured_label != "" %}
             <span class="proj-featured-badge">{{ project.featured_label }}</span>
           {% endif %}
         </div>
 
         <div class="proj-right">
           <h2 class="proj-title">{{ project.title }}</h2>
-          <p class="proj-desc">{{ project.description }}</p>
+          <p class="proj-desc">{{ project.description | newline_to_br }}</p>
 
           {% if project.highlights %}
             <ul class="proj-highlights">
