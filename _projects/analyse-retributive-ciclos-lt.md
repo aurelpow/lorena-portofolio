@@ -2,16 +2,18 @@
 layout: project
 title: Análisis retributivo integral
 year: '2025'
-tool: Excel · Informe técnico
+tool: Power BI
 featured: true
-featured_label: Caso práctico CEF
-description: Diagnóstico completo de la situación salarial de una empresa ficticia de 1.106 empleados en 12 niveles y 6 grupos profesionales.
-highlights:
-  - Estructura de bandas salariales, amplitud, solapes y apertura
-  - Posicionamiento de mercado y compa-ratio por nivel
-  - Análisis de brecha de género con propuestas de acción
-  - Regresión lineal de retribuciones (R²=87% tras análisis de sensibilidad)
-  - Matriz de incremento salarial con distribución de masa
+featured_label: ''
+description: |-
+  Diagnóstico completo de la situación salarial de una empresa ficticia de 1.106 empleados en 12 niveles y 6 grupos profesionales.
+
+  Se analiza: 
+  Estructura de bandas salariales, amplitud, solapes y apertura.
+  Posicionamiento de mercado y compa-ratio por nivel.
+  Análisis de brecha de género con propuestas de acción.
+  Matriz de incremento salarial con distribución de masa.
+highlights: []
 tags:
   - Bandas salariales
   - Compa-ratio
