@@ -15,7 +15,7 @@ layout: default
     </div>
   </header>
 
-  <p class="proj-desc">{{ page.description }}</p>
+  <p class="proj-desc">{{ page.description | newline_to_br }}</p>
 
   {% if page.highlights %}
     <ul class="proj-highlights">
