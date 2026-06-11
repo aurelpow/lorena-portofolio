@@ -1,16 +1,21 @@
 ---
 layout: about
-title: "Sobre mí"
-intro: "Soy Lorena Patri, Compensation & Benefits Analyst especializada en salary analytics, equidad retributiva y diseño de política de Total Rewards, basada en Madrid. Combino el rigor analítico de los datos con un enfoque humano: diseño estructuras salariales, analizo posicionamiento de mercado y construyo herramientas de people analytics que ayudan a las organizaciones a tomar decisiones de compensación justas y basadas en evidencia. Los proyectos de este portfolio son ejercicios propios, construidos desde cero para profundizar en estas metodologías — no son trabajo de empresa."
+title: Sobre mí
+intro: |-
+  Hola, soy Lorena 👋🏻
+
+  Mi trayectoria comenzó en finanzas y auditoría, donde desarrollé una base analítica sólida y gran atención al detalle. Con el tiempo, me especialicé en Compensación y Beneficios, un área que me atrajo por la combinación de análisis de datos, estrategia y gestión de personas. Actualmente sigo profundizando en este campo a través de proyectos prácticos de planificación salarial, estructuras retributivas, equidad, benchmarking y people analytics.
+
+  Este portfolio recoge proyectos personales inspirados en situaciones reales de C&B, cada uno nacido de una pregunta que quiero explorar y de mi convicción de que la mejor forma de aprender es construir.
 skills:
-  - "Salary Bands"
-  - "Compa-ratio Analysis"
-  - "Pay Equity"
-  - "Total Rewards"
-  - "Power BI"
-  - "DAX"
-  - "Excel Avanzado"
-  - "People Analytics"
-linkedin: "https://www.linkedin.com/in/lorena-patri/"
-email: "lpatricarbajal@gmail.com"
+  - Salary Bands
+  - Compa-ratio Analysis
+  - Pay Equity
+  - Total Rewards
+  - Power BI
+  - DAX
+  - Excel Avanzado
+  - People Analytics
+linkedin: https://www.linkedin.com/in/lorena-patri/
+email: lpatricarbajal@gmail.com
 ---
