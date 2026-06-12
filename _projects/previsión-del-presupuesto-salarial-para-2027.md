@@ -5,7 +5,7 @@ year: '2026'
 tool: Excel
 featured: true
 featured_label: ''
-description: 'Modelo de presupuestación salarial para una empresa ficticia de 50 empleados, elaborado desde la óptica del ciclo real de compensación: estimación del coste de la revisión salarial del año siguiente antes de su ejecución, bajo un convenio colectivo sectorial. Se analiza:'
+description: 'Modelo de presupuestación salarial para una empresa ficticia de 50 empleados, elaborado desde la óptica del ciclo real de compensación: estimación del coste de la revisión salarial del año siguiente antes de su ejecución, bajo un convenio colectivo sectorial.'
 highlights:
   - Dos escenarios de merit pool (conservador 2,5% y mercado 3%) con masa salarial cascada desde el convenio aplicado
   - Cláusula de revisión IPC modelada según convenios reales, con calculadora dinámica de sensibilidad a la inflación
