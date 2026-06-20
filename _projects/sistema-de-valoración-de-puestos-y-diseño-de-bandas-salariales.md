@@ -1,5 +1,6 @@
 ---
 layout: project
+lang: es
 title: Sistema de Valoración de Puestos y Diseño de Bandas Salariales
 year: '2026'
 tool: Excel

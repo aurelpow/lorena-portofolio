@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+{% assign lang = page.lang | default: "es" %}
+{% assign t = site.data.i18n[lang] %}
 <article class="project-detail">
   <header>
     <span class="proj-year">{{ page.year }}</span>
@@ -39,7 +41,7 @@ layout: default
 
   {% if page.link %}
     <a class="proj-link" href="{{ page.link }}" target="_blank" rel="noopener">
-      {{ page.link_label | default: "Ver proyecto" }}
+      {{ page.link_label | default: t.projects.default_link_label }}
     </a>
   {% endif %}
 

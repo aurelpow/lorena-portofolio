@@ -9,6 +9,20 @@ collections:
   projects:
     output: true
     permalink: /projects/:name/
+defaults:
+  - scope:
+      path: ""
+    values:
+      lang: es
+  - scope:
+      path: "en"
+    values:
+      lang: en
+  - scope:
+      path: "_projects"
+    values:
+      lang: es
+
 exclude:
   - CLAUDE.md
   - lorena_patri_portfolio.html
