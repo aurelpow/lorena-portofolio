@@ -1,0 +1,22 @@
+nav:
+  projects: Proyectos
+  about: Sobre mí
+  contact: Contacto
+  badge: "C&B Analyst"
+
+footer:
+  tagline: "Lorena Patri · C&B Analyst · Madrid"
+  contact_label: Contacto
+
+projects:
+  count_suffix: proyectos
+  default_link_label: Ver proyecto
+
+about:
+  section_tag: Sobre mí
+  skills_label: Áreas de especialización
+  contact_label: Contacto
+
+lang_switcher:
+  label: EN
+  title: Switch to English

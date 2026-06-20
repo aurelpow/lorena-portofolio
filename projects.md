@@ -1,5 +1,6 @@
 ---
 layout: projects
+permalink: /projects/
 title: Proyectos
 hero_tag: Proyectos independientes · Compensación &amp; Beneficios
 hero_title: Análisis de<br><em>compensación</em>

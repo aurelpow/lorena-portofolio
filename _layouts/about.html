@@ -1,8 +1,10 @@
 ---
 layout: default
 ---
+{% assign lang = page.lang | default: "es" %}
+{% assign t = site.data.i18n[lang] %}
 <section class="about-page">
-  <p class="hero-tag">Sobre mí</p>
+  <p class="hero-tag">{{ t.about.section_tag }}</p>
   <h1 class="about-title">{{ page.title }}</h1>
   <p class="about-intro">{{ page.intro }}</p>
 </section>
@@ -10,7 +12,7 @@ layout: default
 <hr class="section-divider">
 
 <section class="about-section">
-  <p class="projects-label">Áreas de especialización</p>
+  <p class="projects-label">{{ t.about.skills_label }}</p>
   <div class="skills-grid">
     {% for skill in page.skills %}
       <span class="skill-tag">{{ skill }}</span>
@@ -28,7 +30,7 @@ layout: default
 <hr class="section-divider">
 
 <section class="about-section about-contact">
-  <p class="projects-label">Contacto</p>
+  <p class="projects-label">{{ t.about.contact_label }}</p>
   <div class="contact-links">
     {% if page.linkedin %}
       <a class="proj-link" href="{{ page.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>

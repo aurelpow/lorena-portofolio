@@ -1,5 +1,6 @@
 ---
 layout: project
+lang: es
 title: Análisis de Rotación de personal
 year: '2025'
 tool: Power BI

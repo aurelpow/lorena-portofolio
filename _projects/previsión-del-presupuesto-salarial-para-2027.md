@@ -1,5 +1,6 @@
 ---
 layout: project
+lang: es
 title: Previsión del presupuesto salarial para 2027
 year: '2026'
 tool: Excel
