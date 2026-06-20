@@ -1,6 +1,8 @@
+{% assign lang = page.lang | default: "es" %}
+{% assign t = site.data.i18n[lang] %}
 <footer>
-  <span>Lorena Patri · C&amp;B Analyst · Madrid</span>
-  <nav aria-label="Contacto">
+  <span>{{ t.footer.tagline }}</span>
+  <nav aria-label="{{ t.footer.contact_label }}">
     <a href="https://www.linkedin.com/in/lorena-patri/" target="_blank" rel="noopener">LinkedIn</a>
     &nbsp;·&nbsp;
     <a href="mailto:lpatricarbajal@gmail.com">lpatricarbajal@gmail.com</a>

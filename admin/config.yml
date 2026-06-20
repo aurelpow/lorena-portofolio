@@ -122,6 +122,13 @@ collections:
         widget: "hidden"
         default: "project"
 
+      - label: "Idioma / Language"
+        name: "lang"
+        widget: "select"
+        options: ["es", "en"]
+        default: "es"
+        hint: "es = español, en = English"
+
       - label: "Título"
         name: "title"
         widget: "string"

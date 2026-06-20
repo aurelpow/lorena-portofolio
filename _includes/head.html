@@ -8,3 +8,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+
+{% if page.lang == "es" or page.lang == nil %}
+<script>
+(function(){
+  if(localStorage.getItem('lang-override')) return;
+  var lang = (navigator.language || '').slice(0,2);
+  if(lang === 'en' && location.pathname.indexOf('/en/') === -1){
+    localStorage.setItem('lang-override','1');
+    location.replace(location.pathname.replace(/^(\/lorena-portofolio)?\//, '$1/en/'));
+  }
+})();
+</script>
+{% endif %}

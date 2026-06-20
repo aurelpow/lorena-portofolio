@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+{% assign lang = page.lang | default: "es" %}
+{% assign t = site.data.i18n[lang] %}
 <section class="hero">
   <p class="hero-tag">{{ page.hero_tag }}</p>
   <h1 class="hero-title">{{ page.hero_title }}</h1>
@@ -10,9 +12,10 @@ layout: default
 <hr class="section-divider">
 
 <section class="projects">
-  <p class="projects-label">{{ site.projects.size }} proyectos</p>
+  {% assign lang_projects = site.projects | where: "lang", lang %}
+  <p class="projects-label">{{ lang_projects.size }} {{ t.projects.count_suffix }}</p>
 
-  {% assign sorted_projects = site.projects | sort: "year" | reverse %}
+  {% assign sorted_projects = lang_projects | sort: "year" | reverse %}
   {% for project in sorted_projects %}
     <article class="project{% if project.featured %} featured{% endif %}">
       <div class="proj-bar"></div>
@@ -57,7 +60,7 @@ layout: default
 
           {% if project.link %}
             <a class="proj-link" href="{{ project.link }}" target="_blank" rel="noopener">
-              {{ project.link_label | default: "Ver proyecto" }}
+              {{ project.link_label | default: t.projects.default_link_label }}
             </a>
           {% endif %}
         </div>

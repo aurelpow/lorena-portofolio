@@ -1,5 +1,6 @@
 ---
 layout: about
+permalink: /about/
 title: Bienvenido/a
 intro: |-
   Hola, soy Lorena 👋🏻

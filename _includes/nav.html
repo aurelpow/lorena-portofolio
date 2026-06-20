@@ -1,6 +1,13 @@
+{% assign lang = page.lang | default: "es" %}
+{% assign t = site.data.i18n[lang] %}
+{% if lang == "en" %}
+  {% assign prefix = "/en" %}
+{% else %}
+  {% assign prefix = "" %}
+{% endif %}
 <nav class="nav">
   <div class="nav-left">
-    <a class="nav-brand" href="{{ '/' | relative_url }}">
+    <a class="nav-brand" href="{{ prefix | append: '/' | relative_url }}">
       {% if site.profile_photo %}
         <img class="nav-photo" src="{{ site.baseurl }}/assets/img/profile/lorena.jpg" alt="Lorena Patri">
       {% else %}
@@ -10,10 +17,40 @@
     </a>
   </div>
   <div class="nav-right">
-    <a href="{{ '/projects' | relative_url }}">Proyectos</a>
-    <a href="{{ '/about' | relative_url }}">Sobre mí</a>
+    <a href="{{ prefix | append: '/projects' | relative_url }}">{{ t.nav.projects }}</a>
+    <a href="{{ prefix | append: '/about' | relative_url }}">{{ t.nav.about }}</a>
     <a href="https://www.linkedin.com/in/lorena-patri/" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="mailto:lpatricarbajal@gmail.com">Contacto</a>
-    <span class="nav-badge">C&amp;B Analyst</span>
+    <a href="mailto:lpatricarbajal@gmail.com">{{ t.nav.contact }}</a>
+    <span class="nav-badge">{{ t.nav.badge }}</span>
+    <div class="lang-switch">
+      <button class="lang-switch-btn" aria-expanded="false" aria-label="{{ t.lang_switcher.title }}">
+        {% if lang == "en" %}
+          <img class="lang-flag" src="{{ '/assets/img/flags/gb.svg' | relative_url }}" alt="" width="20" height="15">
+        {% else %}
+          <img class="lang-flag" src="{{ '/assets/img/flags/es.svg' | relative_url }}" alt="" width="20" height="15">
+        {% endif %}
+        <svg class="lang-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="lang-dropdown">
+        <a class="lang-option{% if lang == 'en' %} active{% endif %}" href="{% if lang == 'en' %}{{ page.url | relative_url }}{% else %}{{ '/en' | append: page.url | relative_url }}{% endif %}">
+          <img class="lang-flag" src="{{ '/assets/img/flags/gb.svg' | relative_url }}" alt="" width="20" height="15">
+          <span>English</span>
+          {% if lang == "en" %}<svg class="lang-check" width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5l4 4L13 1" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{% endif %}
+        </a>
+        <a class="lang-option{% if lang == 'es' %} active{% endif %}" href="{% if lang == 'es' %}{{ page.url | relative_url }}{% else %}{{ page.url | replace: '/en/', '/' | relative_url }}{% endif %}">
+          <img class="lang-flag" src="{{ '/assets/img/flags/es.svg' | relative_url }}" alt="" width="20" height="15">
+          <span>Espa&ntilde;ol</span>
+          {% if lang == "es" %}<svg class="lang-check" width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5l4 4L13 1" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{% endif %}
+        </a>
+      </div>
+    </div>
   </div>
 </nav>
+<script>
+(function(){
+  var btn=document.querySelector('.lang-switch-btn'),dd=document.querySelector('.lang-dropdown');
+  if(!btn)return;
+  btn.addEventListener('click',function(e){e.stopPropagation();var open=dd.classList.toggle('open');btn.setAttribute('aria-expanded',open)});
+  document.addEventListener('click',function(){dd.classList.remove('open');btn.setAttribute('aria-expanded','false')});
+})();
+</script>

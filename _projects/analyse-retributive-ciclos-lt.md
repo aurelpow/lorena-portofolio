@@ -1,5 +1,6 @@
 ---
 layout: project
+lang: es
 title: Análisis de Compensación - Ciclos Lt.
 year: '2025'
 tool: Power BI
