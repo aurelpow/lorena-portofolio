@@ -1,7 +1,6 @@
 ---
 layout: project
 lang: en
-permalink: /en/projects/plan-compensacion-jovenes/
 title: Total Compensation Plan — Young Talent
 year: '2026'
 tool: PDF
@@ -22,6 +21,7 @@ tags:
   - Flexible remuneration
 accent_tags:
   - Total rewards
-link: https://drive.google.com/file/d/1HgD7v-ELSsFXyuyT5gGFcyXpiV93O7_d/view
+link: https://drive.google.com/file/d/1UnP1N4xIQw8K3Vuke1fKZvm4sGh5ex6Q/view?usp=sharing
 link_label: View proposal
+permalink: /en/projects/plan-compensacion-jovenes/
 ---
