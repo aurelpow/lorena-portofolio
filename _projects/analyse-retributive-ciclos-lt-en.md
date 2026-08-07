@@ -1,7 +1,6 @@
 ---
 layout: project
 lang: en
-permalink: /en/projects/analyse-retributive-ciclos-lt/
 title: Compensation Analysis — Ciclos Lt.
 year: '2025'
 tool: Power BI
@@ -24,6 +23,7 @@ accent_tags:
   - Salary bands
   - Compa-ratio
   - Gender pay gap
-link: https://bit.ly/4fGP4Vx
+link: https://app.powerbi.com/view?r=eyJrIjoiMDk2YmVmZGMtZTQ3My00ZTM0LWJkOTctZmVkM2ViNjEzMzhmIiwidCI6IjY1YzNlOWNhLWM1YWMtNDM2YS04MzBhLTZmNDU4NzM0OGQ0NCIsImMiOjl9&pageName=48c10274eed5724b0ab7
 link_label: View full report
+permalink: /en/projects/analyse-retributive-ciclos-lt/
 ---
