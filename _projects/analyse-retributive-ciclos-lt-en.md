@@ -3,6 +3,7 @@ layout: project
 lang: en
 title: Compensation Analysis — Ciclos Lt.
 year: '2025'
+order: 5
 tool: Power BI
 featured: true
 featured_label: ''

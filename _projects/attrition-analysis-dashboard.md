@@ -3,6 +3,7 @@ layout: project
 lang: es
 title: Análisis de Rotación de personal
 year: '2025'
+order: 4
 tool: Power BI
 featured_label: ''
 description: Análisis de rotación segmentado por nivel, departamento y posición en banda salarial. Identificación de perfiles con mayor riesgo de fuga.

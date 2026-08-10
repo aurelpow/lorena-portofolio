@@ -4,6 +4,7 @@ lang: en
 permalink: /en/projects/attrition-analysis-dashboard/
 title: Employee Attrition Analysis
 year: '2025'
+order: 4
 tool: Power BI
 featured_label: ''
 description: Attrition analysis segmented by level, department and salary band position. Identification of profiles with the highest flight risk.

@@ -140,6 +140,14 @@ collections:
         widget: "string"
         hint: "Ej: 2025"
 
+      - label: "Orden"
+        name: "order"
+        widget: "number"
+        value_type: "int"
+        min: 1
+        default: 99
+        hint: "Posición en la lista de proyectos: 1 aparece primero. Usa el mismo número en las versiones ES y EN del mismo proyecto para que ambos idiomas coincidan."
+
       - label: "Herramienta / Stack"
         name: "tool"
         widget: "string"

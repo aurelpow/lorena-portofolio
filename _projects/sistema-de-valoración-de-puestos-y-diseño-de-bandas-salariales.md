@@ -3,6 +3,7 @@ layout: project
 lang: es
 title: Sistema de Valoración de Puestos y Diseño de Bandas Salariales
 year: '2026'
+order: 3
 tool: Excel
 featured: true
 featured_label: ''

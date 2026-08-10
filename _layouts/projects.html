@@ -15,7 +15,12 @@ layout: default
   {% assign lang_projects = site.projects | where: "lang", lang %}
   <p class="projects-label">{{ lang_projects.size }} {{ t.projects.count_suffix }}</p>
 
-  {% assign sorted_projects = lang_projects | sort: "year" | reverse %}
+  {% comment %}
+    Sort on the explicit `order` field, not `year` — year alone ties across
+    projects and the tie-break falls back to filename, which differs between
+    the ES and EN files and made the two lists diverge.
+  {% endcomment %}
+  {% assign sorted_projects = lang_projects | sort: "order" %}
   {% for project in sorted_projects %}
     <article class="project{% if project.featured %} featured{% endif %}">
       <div class="proj-bar"></div>

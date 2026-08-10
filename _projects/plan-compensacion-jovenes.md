@@ -3,6 +3,7 @@ layout: project
 lang: es
 title: Plan de Compensación Total — Jóvenes Talentos
 year: '2026'
+order: 1
 tool: PDF
 featured: true
 featured_label: ''

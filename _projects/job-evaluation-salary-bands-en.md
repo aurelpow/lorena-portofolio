@@ -4,6 +4,7 @@ lang: en
 permalink: /en/projects/job-evaluation-salary-bands/
 title: Job Evaluation System & Salary Band Design
 year: '2026'
+order: 3
 tool: Excel
 featured: true
 featured_label: ''
