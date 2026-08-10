@@ -65,11 +65,11 @@ body::before {
   text-decoration: none;
 }
 .nav-right { display: flex; align-items: center; gap: 24px; }
-.nav-right a {
+.nav-right > a {
   font-size: 12px; letter-spacing: 1px; text-transform: uppercase;
   color: var(--warm); text-decoration: none; transition: color 0.2s;
 }
-.nav-right a:hover { color: var(--accent); }
+.nav-right > a:hover { color: var(--accent); }
 .nav-badge {
   font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
   background: var(--accent); color: #fff;
@@ -372,7 +372,7 @@ footer a:hover { color: var(--accent); }
 @media (max-width: 640px) {
   .nav { padding: 0 20px; }
   .nav-right { gap: 12px; }
-  .nav-right a:not(.nav-badge) { display: none; }
+  .nav-right > a { display: none; }
   .lang-switch { display: flex; }
   .hero { padding: 100px 20px 60px; }
   .projects { padding: 48px 20px 80px; }
