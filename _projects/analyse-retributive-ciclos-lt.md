@@ -23,7 +23,7 @@ tags:
 accent_tags:
   - Bandas salariales
   - Compa-ratio
-  - Brecha de género
+  - Brecha de género.
 link: https://app.powerbi.com/view?r=eyJrIjoiMDk2YmVmZGMtZTQ3My00ZTM0LWJkOTctZmVkM2ViNjEzMzhmIiwidCI6IjY1YzNlOWNhLWM1YWMtNDM2YS04MzBhLTZmNDU4NzM0OGQ0NCIsImMiOjl9&pageName=48c10274eed5724b0ab7
 link_label: Ver informe completO
 ---
