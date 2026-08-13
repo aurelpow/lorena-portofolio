@@ -20,3 +20,9 @@ about:
 lang_switcher:
   label: EN
   title: Switch to English
+
+cookies:
+  message: "Este sitio usa cookies de Google Analytics para medir cuántas personas lo visitan. No se usan con fines publicitarios."
+  accept: Aceptar
+  reject: Rechazar
+  aria_label: Aviso de cookies

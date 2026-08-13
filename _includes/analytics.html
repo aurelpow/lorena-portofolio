@@ -1,0 +1,40 @@
+{% comment %}
+  Google Analytics 4 — loaded only in production, only when a measurement ID
+  is set in _config.yml, and only after the visitor accepts in the cookie
+  banner (see cookie-banner.html). Consent Mode is defaulted to denied, so
+  nothing is stored before that choice is made (GDPR / LSSI-CE).
+{% endcomment %}
+{% if jekyll.environment == "production" and site.google_analytics and site.google_analytics != "" %}
+<script>
+(function(){
+  var ID = '{{ site.google_analytics }}';
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  window.gtag = gtag;
+
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied'
+  });
+
+  var loaded = false;
+  window.loadAnalytics = function(){
+    if (loaded) return;
+    loaded = true;
+    gtag('consent', 'update', { analytics_storage: 'granted' });
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID;
+    document.head.appendChild(s);
+    gtag('js', new Date());
+    gtag('config', ID);
+  };
+
+  var stored;
+  try { stored = localStorage.getItem('cookie-consent'); } catch(e) {}
+  if (stored === 'granted') window.loadAnalytics();
+})();
+</script>
+{% endif %}

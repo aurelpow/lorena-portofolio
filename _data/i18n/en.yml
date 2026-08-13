@@ -20,3 +20,9 @@ about:
 lang_switcher:
   label: ES
   title: Cambiar a español
+
+cookies:
+  message: "This site uses Google Analytics cookies to measure how many people visit it. They are not used for advertising."
+  accept: Accept
+  reject: Decline
+  aria_label: Cookie notice

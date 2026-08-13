@@ -5,6 +5,8 @@ url: "https://aurelpow.github.io"
 markdown: kramdown
 highlighter: rouge
 profile_photo: true
+# GA4 measurement ID (G-XXXXXXXXXX). Empty = no analytics, no cookie banner.
+google_analytics: ""
 collections:
   projects:
     output: true
