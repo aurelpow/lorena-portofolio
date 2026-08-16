@@ -61,6 +61,11 @@ bundle exec jekyll serve --livereload --config _config.yml,_config.dev.yml
 
 Open: http://127.0.0.1:4000
 
+for Iphone, Ipad, or other devices on the same network, run:
+```bash 
+bundle exec jekyll serve --host 0.0.0.0 --livereload --force_polling --config _config.yml,_config.dev.yml
+``` 
+
 ---
 
 ## Add a new project
