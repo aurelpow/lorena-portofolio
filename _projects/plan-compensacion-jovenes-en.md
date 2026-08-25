@@ -3,7 +3,7 @@ layout: project
 lang: en
 title: Total Compensation Plan — Young Talent
 year: '2026'
-order: 1
+order: 2
 tool: PDF
 featured: true
 featured_label: ''
