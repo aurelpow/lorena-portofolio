@@ -3,7 +3,7 @@ layout: project
 lang: en
 title: Merkline - Analysis of Social Benefits Implementation
 year: '2026'
-order: 2
+order: 5
 tool: Excel
 featured: true
 featured_label: Flexible Benefits
