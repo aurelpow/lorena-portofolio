@@ -1,7 +1,6 @@
 ---
 layout: project
 lang: en
-permalink: /en/projects/job-evaluation-salary-bands/
 title: Job Evaluation System & Salary Band Design
 year: '2026'
 order: 3
@@ -14,6 +13,7 @@ description: |-
 highlights: []
 tags: []
 accent_tags: []
-link: https://docs.google.com/spreadsheets/d/1rBSlew-Fd6BqNBs5ZSbVYhMKuE1GGXSv/edit?usp=sharing&ouid=116394144337670359214&rtpof=true&sd=true&usp=embed_facebook
+link: https://1drv.ms/x/c/a661cb2792b0bac1/IQBcO6WdNILwRayYclxMnBLcAWf0rbrI1oZszcBU4MwcWyQ?e=ToSECD
 link_label: View project
+permalink: /en/projects/job-evaluation-salary-bands/
 ---
