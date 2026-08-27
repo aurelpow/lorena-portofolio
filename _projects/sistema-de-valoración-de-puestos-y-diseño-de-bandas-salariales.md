@@ -1,6 +1,6 @@
 ---
 layout: project
-lang: es
+lang: en
 title: Sistema de Valoración de Puestos y Diseño de Bandas Salariales
 year: '2026'
 order: 3
@@ -13,6 +13,6 @@ description: |-
 highlights: []
 tags: []
 accent_tags: []
-link: https://docs.google.com/spreadsheets/d/1rBSlew-Fd6BqNBs5ZSbVYhMKuE1GGXSv/edit?usp=sharing&ouid=116394144337670359214&rtpof=true&sd=true&usp=embed_facebook
+link: https://1drv.ms/x/c/a661cb2792b0bac1/IQBcO6WdNILwRayYclxMnBLcAWf0rbrI1oZszcBU4MwcWyQ?e=RZ2y8e
 link_label: Ver proyecto
 ---
