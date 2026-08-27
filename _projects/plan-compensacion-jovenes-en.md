@@ -22,7 +22,7 @@ tags:
   - Flexible remuneration
 accent_tags:
   - Total rewards
-link: https://drive.google.com/file/d/1UnP1N4xIQw8K3Vuke1fKZvm4sGh5ex6Q/view?usp=sharing
+link: https://1drv.ms/b/c/a661cb2792b0bac1/IQDyT6bsPh00QoiQyWm7tgCEASl-kKoHK6bq6aUmJPHg3f0?e=MhlIt3
 link_label: View proposal
 permalink: /en/projects/plan-compensacion-jovenes/
 ---
