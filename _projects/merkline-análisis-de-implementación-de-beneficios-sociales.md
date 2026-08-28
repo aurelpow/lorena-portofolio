@@ -11,6 +11,6 @@ description: Análisis completo del paquete de beneficios para una filial españ
 highlights: []
 tags: []
 accent_tags: []
-link: https://docs.google.com/spreadsheets/d/1qKq6MUUJNyHf3MmFoX5ovf9_Axmh2ZZz/edit?usp=sharing&ouid=116394144337670359214&rtpof=true&sd=true
+link: https://1drv.ms/x/c/a661cb2792b0bac1/IQBNKxbOA74xSYK_kBK7vPcFAQG0_IEwetJ5ws3AeJhv0Ho?e=A9yl2E
 link_label: Ver proyecto
 ---
